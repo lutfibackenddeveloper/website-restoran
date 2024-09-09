@@ -1,0 +1,128 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+
+/* Main container styling */
+.container {
+    padding: 20px;
+    width:100%;
+}
+
+h1{
+    margin-left:250px;
+}
+
+
+
+/* Order table styling */
+.order-table {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:174vh;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+}
+
+.order-table th, .order-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.order-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.order-table td {
+    color: #555;
+}
+
+.order-table td:last-child {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #2d87ef;
+}
+
+.order-table td:last-child.selesai {
+    color: #28a745;
+}
+
+.order-table td:last-child.menunggu {
+    color: #ffc107;
+}
+
+.order-table td:last-child.proses {
+    color: #dc3545;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+a button{
+    height: 5vh;
+    width:17vh;
+    padding:2px;
+    display:inline-flex;
+}
+
+button.detail {
+    background-color: #4CAF50; /* Warna hijau untuk tombol detail */
+    color: white; /* Teks putih untuk tombol */
+    border: none; /* Tidak ada border untuk tombol */
+    padding: 10px 15px; /* Ukuran padding untuk tombol */
+    font-size: 16px; /* Ukuran font untuk tombol */
+    cursor: pointer; /* Efek kursor saat diarahkan ke tombol */
+    border-radius: 5px; /* Sudut tombol */
+}
+
+button.detail:hover {
+    background-color: #3e8e41; /* Warna hijau lebih tua saat tombol diarahkan */
+}
+
+button.hapus {
+    background-color: #e74c3c; /* Warna merah untuk tombol hapus */
+    color: white; /* Teks putih untuk tombol */
+    border: none; /* Tidak ada border untuk tombol */
+    padding: 10px 15px; /* Ukuran padding untuk tombol */
+    font-size: 16px; /* Ukuran font untuk tombol */
+    cursor: pointer; /* Efek kursor saat diarahkan ke tombol */
+    border-radius: 5px; /* Sudut tombol */
+}
+
+button.hapus:hover {
+    background-color: #c0392b; /* Warna merah lebih tua saat tombol diarahkan */
+}
+
+button.bayar {
+    background-color: #007bff; /* Warna biru untuk tombol bayar */
+    color: white; /* Teks putih untuk tombol */
+    border: none; /* Tidak ada border untuk tombol */
+    padding: 10px 15px; /* Ukuran padding untuk tombol */
+    font-size: 16px; /* Ukuran font untuk tombol */
+    cursor: pointer; /* Efek kursor saat diarahkan ke tombol */
+    border-radius: 5px; /* Sudut tombol */
+}
+
+button.bayar:hover {
+    background-color: #0056b3; /* Warna biru lebih tua saat tombol diarahkan */
+}
+

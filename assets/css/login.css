@@ -1,0 +1,82 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0; /* Menghilangkan margin default */
+  height: 100vh; /* Mengatur tinggi body agar sama dengan tinggi viewport */
+  display: flex; /* Menggunakan Flexbox untuk centering */
+  justify-content: center; /* Memposisikan konten secara horizontal di tengah */
+  align-items: center; /* Memposisikan konten secara vertikal di tengah */
+  background-color: #f0f2f5;
+}
+/* img {
+    display: block;
+    margin: 50px auto 10px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+} */
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+	border: 9px solid #e3e3e3;
+	padding: 30px;
+	background: #eaeaea;
+	border-radius: 15px;
+
+}
+h1{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 50px auto 10px;
+}
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  height:40px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin:7px;
+}
+
+btn:hover {
+  opacity: 1;
+}
+
+a{
+  text-decoration:none;
+}

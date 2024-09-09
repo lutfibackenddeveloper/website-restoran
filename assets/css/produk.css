@@ -1,0 +1,180 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    box-sizing: border-box; /* Tambahkan untuk membuat elemen lebih responsive */
+
+}
+body{
+    background-color: #f0f2f5;
+
+}
+
+.user-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 160px; /* Sesuaikan dengan lebar sidebar untuk mencegah konten tertutupi sidebar */
+    border-radius: 30px;
+    max-width: 100%; /* Tambahkan untuk membuat konten tidak melebihi lebar layar */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block; /* Tambahkan untuk membuat tombol lebih responsive */
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0984e3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; 
+    text-align: center;
+    width: 100%;
+    font-size: 40px; /* Perbesar ukuran font */
+    margin-left: 243px; /* Sesuaikan dengan lebar sidebar */
+    margin-top: 0; /* Ubah agar celah di atas pada tampilan tertutup */
+    max-width: 100%; /* Tambahkan untuk membuat header tidak melebihi lebar layar */
+}
+
+.user-dashboard p {
+    font-size: 24px; /* Perbesar ukuran font */
+    color: #000000; /* Ubah warna teks menjadi putih */
+    margin-top: 10px;
+    max-width: 100%; /* Tambahkan untuk membuat teks tidak melebihi lebar layar */
+}
+
+.user-dashboard .add-product-btn {
+    background-color: #40a2ad; /* Ubah warna latar belakang tombol menjadi biru */
+    color: #ffffff; /* Ubah warna teks tombol menjadi putih */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px; /* Ubah ukuran font tombol */
+    cursor: pointer; /* Tambahkan efek kursor saat diarahkan ke tombol */
+    margin-top: 20px; /* Tambahkan margin atas untuk tombol */
+    width: 90%; /* Pastikan tombol menempati lebar penuh */
+    margin-left: 70px;
+    margin-right: auto;
+    display: block; /* Tambahkan untuk membuat tombol lebih responsive */
+    max-width: 100%; /* Tambahkan untuk membuat tombol tidak melebihi lebar layar */
+}
+
+.user-dashboard .card {
+    margin-top: 40px;
+    width: calc(24% - 35px); /* Ubah ukuran untuk mengurangi jarak antar card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Ubah warna latar belakang card menjadi biru */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan yang lebih gelap */
+    overflow: hidden; /* Tambahkan agar gambar tidak melebihi batas card */
+    transition: transform 0.2s;
+    margin-left: auto;
+    max-width: 100%; /* Tambahkan untuk membuat card tidak melebihi lebar layar */
+    height:300px;
+}
+
+.user-dashboard .card:hover {
+    transform: scale(1.1);
+    box-shadow: #ffffff; /* Tambahkan bayangan yang lebih gelap saat dihover */
+}
+
+.user-dashboard .card img {
+    max-width: 100%; /* Tambahkan agar gambar tidak melebihi batas card */
+    height: 150px; /* Perbesar ukuran gambar */
+    object-fit: cover; /* Tambahkan agar gambar memiliki ukuran yang sama */
+    display: block; /* Tambahkan untuk membuat gambar lebih responsive */
+}
+
+.user-dashboard .card h3 {
+    font-size: 24px; /* Perbesar ukuran font */
+    color: #ffffff; /* Ubah warna teks menjadi putih */
+    margin: 10px 0;
+    max-width: 100%; /* Tambahkan untuk membuat teks tidak melebihi lebar layar */
+}
+
+.user-dashboard .card p {
+    font-size: 20px; /* Perbesar ukuran font */
+    color: #000000; /* Ubah warna teks menjadi putih */
+    margin-top: 10px;
+    max-width: 100%; /* Tambahkan untuk membuat teks tidak melebihi lebar layar */
+}
+
+.card .edit-btn {
+    background: #e6d11d;
+    width: 50%;
+    height:30px;
+    text-wrap: wrap;
+    margin-left: 10px;    
+    text-align: center;
+    display: inline-block; /* Tambahkan untuk membuat tombol lebih responsive */
+    margin-bottom:5px;
+    margin-top:5px;
+    border-radius:10px;
+}
+
+
+.card .delete-btn {
+    background: #c81818;
+    width: 50%;
+    height:30px;
+    text-wrap: wrap;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline-block; /* Tambahkan untuk membuat tombol lebih responsive */
+    border-radius:10px;
+}
+
+.user-dashboard .card input[type="number"] {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex;
+    justify-content: flex;
+    border: 1px solid #ffffff; /* Ubah warna border menjadi putih */
+    border-radius: 5px;
+    font-size: 20px; /* Perbesar ukuran font */
+    color: #000000; /* Ubah warna teks menjadi putih */
+    max-width: 100%; /* Tambahkan untuk membuat input tidak melebihi lebar layar */
+}
+
+.user-dashboard .pesan_sekarang {
+    background-color: #007bff; /* Ubah warna latar belakang tombol menjadi biru */
+    color: #ffffff; /* Ubah warna teks tombol menjadi putih */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px; /* Ubah ukuran font tombol */
+    cursor: pointer; /* Tambahkan efek kursor saat diarahkan ke tombol */
+    margin-top: 20px; /* Tambahkan margin atas untuk tombol */
+    width: 100%; /* Pastikan tombol menempati lebar penuh */
+    margin-left: 70px;
+    display: block; /* Tambahkan untuk membuat tombol lebih responsive */
+    max-width: 100%; /* Tambahkan untuk membuat tombol tidak melebihi lebar layar */
+}
+
+@media (max-width: 768px) {
+    .user-dashboard .card {
+        width: calc(33.333% - 10px); /* Ubah ukuran untuk mengurangi jarak antar card */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-dashboard .card {
+        width: calc(50% - 10px); /* Ubah ukuran untuk mengurangi jarak antar card */
+    }
+}

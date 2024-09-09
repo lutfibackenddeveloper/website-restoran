@@ -1,0 +1,116 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0984e3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Mengatur item ke tengah */
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    max-width: 100%;
+}
+
+.navbar {
+    background-color: rgb(17, 82, 157);
+    padding: 7px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Menjaga item di sebelah kanan */
+    font-size: 30px;
+    margin-bottom: 0;
+    position: relative;
+    padding-right: 40px; /* Menambahkan ruang di sebelah kanan */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0; /* Menghapus margin default */
+    padding: 0;
+}
+
+.item {
+    margin: 0 20px; /* Mengatur jarak antara item navbar */
+}
+
+.item a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar .item a:hover {
+    background-color: #1187fe; /* Mengubah warna latar belakang */
+    color: #ffffff; /* Mengubah warna teks */
+    transform: scale(1.05); /* Memperbesar elemen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+img.bg-user {
+    width: 100%;
+    height: 30vh;
+    display: block;
+    object-fit: cover; /* Memastikan gambar memenuhi area */
+}
+
+.text-on-image {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #1187fe;
+    color: #ddd;
+}
